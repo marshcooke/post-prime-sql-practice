@@ -44,4 +44,42 @@ i. MANIPULATION
     10. CONSTRAINTS
 
     11. GENERALIZATIONS
+
+
+ii. GENERALIZATIONS
+    1. INTRODUCTION
+        SELECT * FROM movies;
+
+    2. SELECT
+        SELECT name, genre FROM movies;
+
+        SELECT name, genre, year FROM movies;
+
+    3. AS
+        SELECT name AS 'Star Wars' FROM movies;
+
+        SELECT imdb_rating AS 'IMDb' FROM movies;
+
+    4. DISTINCT
+
+    5. WHERE
     
+    6. LIKE I 
+
+    7. LIKE II
+
+    8. IS NULL
+    
+    9. BETWEEN
+
+    10. AND
+
+    11. OR 
+
+    12. ORDER BY
+
+    13. LIMIT
+
+    14. CASE
+
+    15. REVIEW

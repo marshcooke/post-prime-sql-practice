@@ -111,3 +111,24 @@ ii. GENERALIZATIONS
             END as 'mood' 
         FROM movies;
 
+
+iii. AGGREGATE FUNCTIONS
+    1. INTRODUCTION
+
+    2. COUNT
+
+    3. SUM
+
+    4. MAX/MIN
+
+    5. AVERAGE
+
+    6. ROUND
+
+    7. GROUP BY I
+
+    8. GROUP BY II
+
+    9. HAVING
+
+    10. REVIEW

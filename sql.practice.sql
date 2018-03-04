@@ -61,9 +61,15 @@ ii. GENERALIZATIONS
         SELECT imdb_rating AS 'IMDb' FROM movies;
 
     4. DISTINCT
+        SELECT DISTINCT genre FROM movies;
+
+        SELECT DISTINCT year FROM movies;
 
     5. WHERE
-    
+        SELECT * FROM movies WHERE imdb_rating < 5;
+
+        SELECT * FROM movies WHERE year > 2014;
+
     6. LIKE I 
 
     7. LIKE II

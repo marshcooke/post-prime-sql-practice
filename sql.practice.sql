@@ -43,8 +43,6 @@ i. MANIPULATION
 
     10. CONSTRAINTS
 
-    11. GENERALIZATIONS
-
 
 ii. GENERALIZATIONS
     1. INTRODUCTION
@@ -71,21 +69,45 @@ ii. GENERALIZATIONS
         SELECT * FROM movies WHERE year > 2014;
 
     6. LIKE I 
+        SELECT * FROM movies WHERE name LIKE 'Se_en';
 
     7. LIKE II
+        SELECT * FROM movies WHERE name LIKE '%man%';
+
+        SELECT * FROM movies WHERE name LIKE 'The%';
 
     8. IS NULL
-    
+        SELECT name FROM movies WHERE imdb_rating IS NULL;
+
     9. BETWEEN
+        SELECT * FROM movies WHERE name BETWEEN 'D' AND 'G'; 
+
+        SELECT * FROM movies WHERE year BETWEEN 1970 AND 1979;
 
     10. AND
+        SELECT * FROM movies WHERE year BETWEEN 1970 AND 1979 AND imdb_rating > 8;
+
+        SELECT * FROM movies WHERE year < 1985 AND genre = 'horror';
 
     11. OR 
+        SELECT * FROM movies WHERE year > 2014 OR genre = 'action';
+
+        SELECT * FROM movies WHERE genre = 'romance' OR genre = 'comedy';
 
     12. ORDER BY
+        SELECT name, year FROM movies ORDER BY name;
+
+        SELECT name, year, imdb_rating FROM movies ORDER BY imdb_rating DESC;
 
     13. LIMIT
+        SELECT * FROM movies ORDER BY imdb_rating DESC LIMIT 3 ;
 
     14. CASE
+        SELECT name,
+	        CASE
+            	WHEN genre = 'romance' THEN 'fun'
+                WHEN genre = 'comedy' THEN 'fun'
+                ELSE 'serious'
+            END as 'mood' 
+        FROM movies;
 
-    15. REVIEW

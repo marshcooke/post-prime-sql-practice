@@ -1,6 +1,6 @@
 # SQL Practice
 
-This repo is strictly for bettering my SQL query practice by tracking what queries I ran while completing the Codecademy Learn SQL lessons. I'm sorry it isn't more interesting! 
+This repo is strictly for bettering my SQL query practice by tracking what queries I ran while completing the `Codecademy's` Learn SQL lessons. I'm sorry it isn't more interesting! 
 
 
 ## Authors

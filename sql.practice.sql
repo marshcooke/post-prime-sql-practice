@@ -183,11 +183,17 @@ iv. MULTIPLE TABLES
         SELECT * FROM newspaper LEFT JOIN online ON newspaper.id = online.id WHERE online.id IS NULL;
     
     6. PRIMARY KEYS VS FOREIGN KEYS
+        SELECT * FROM classes INNER JOIN students ON classes.id = students.class_id;
 
     7. CROSS JOIN
+        SELECT COUNT (*) FROM newspaper WHERE start_month < 3 AND end_month > 3;
+        SELECT * FROM newspaper CROSS JOIN months;
+        SELECT * FROM newspaper CROSS JOIN months WHERE start_month < month AND end_month > month;
+        SELECT month, COUNT (*) as subscribers FROM newspaper CROSS JOIN months WHERE start_month < month AND end_month > month GROUP BY month;
 
     8. UNION
 
     9. WITH
 
     10. REVIEW
+    

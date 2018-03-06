@@ -155,8 +155,17 @@ iii. AGGREGATE FUNCTIONS
 
 iv. MULTIPLE TABLES
     1. WORKING WITH MULTIPLE TABLES
+        SELECT * 
+        FROM orders;
+        SELECT *
+        FROM subscriptions;
+        SELECT *
+        FROM customers;
 
     2. COMBINING TABLES MANUALLY
+        Sports Magazine --- answering a question about the information connected to an example join table.
+
+        Joe Schmo --- answering a question about the information connected to an example join table.
 
     3. COMBINING TABLES WITH SQL
 

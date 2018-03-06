@@ -174,6 +174,9 @@ iv. MULTIPLE TABLES
         SELECT * FROM orders JOIN subscriptions ON subscriptions.subscription_id = orders.subscription_id WHERE description = "Fashion Magazine";
 
     4. INNER JOINS 
+        SELECT COUNT (*) FROM newspaper;
+        SELECT COUNT (*) FROM online;
+        SELECT COUNT(*) FROM newspaper JOIN online ON newspaper.id = online.id;
 
     5. LEFT JOINS
     

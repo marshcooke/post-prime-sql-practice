@@ -179,6 +179,8 @@ iv. MULTIPLE TABLES
         SELECT COUNT(*) FROM newspaper JOIN online ON newspaper.id = online.id;
 
     5. LEFT JOINS
+        SELECT * FROM newspaper LEFT JOIN online ON newspaper.id = online.id;
+        SELECT * FROM newspaper LEFT JOIN online ON newspaper.id = online.id WHERE online.id IS NULL;
     
     6. PRIMARY KEYS VS FOREIGN KEYS
 

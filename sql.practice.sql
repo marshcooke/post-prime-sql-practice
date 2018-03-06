@@ -192,8 +192,8 @@ iv. MULTIPLE TABLES
         SELECT month, COUNT (*) as subscribers FROM newspaper CROSS JOIN months WHERE start_month < month AND end_month > month GROUP BY month;
 
     8. UNION
+        SELECT * FROM newspaper UNION SELECT * FROM online;
 
     9. WITH
 
     10. REVIEW
-    

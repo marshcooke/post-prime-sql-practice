@@ -152,7 +152,6 @@ iii. AGGREGATE FUNCTIONS
     9. HAVING
         SELECT price, ROUND (AVG (downloads) ) FROM fake_apps GROUP BY price HAVING COUNT (price) > 9;
 
-    10. REVIEW
 
 iv. MULTIPLE TABLES
     1. WORKING WITH MULTIPLE TABLES

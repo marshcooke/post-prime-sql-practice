@@ -168,6 +168,10 @@ iv. MULTIPLE TABLES
         Joe Schmo --- answering a question about the information connected to an example join table.
 
     3. COMBINING TABLES WITH SQL
+        SELECT * FROM orders JOIN subscriptions ON orders.subscription_id = subscriptions.subscription_id;
+            // IMO why would you name the table plural and the id singular??
+
+        SELECT * FROM orders JOIN subscriptions ON subscriptions.subscription_id = orders.subscription_id WHERE description = "Fashion Magazine";
 
     4. INNER JOINS 
 

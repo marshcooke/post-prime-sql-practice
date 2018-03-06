@@ -114,9 +114,13 @@ ii. GENERALIZATIONS
 
 iii. AGGREGATE FUNCTIONS
     1. INTRODUCTION
+        SELECT * FROM fake_apps;
 
     2. COUNT
+        SELECT COUNT (*) FROM fake_apps;
 
+        SELECT COUNT (*) FROM fake_apps WHERE price = 0 ;
+        
     3. SUM
 
     4. MAX/MIN

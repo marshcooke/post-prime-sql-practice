@@ -140,9 +140,16 @@ iii. AGGREGATE FUNCTIONS
         SELECT ROUND (AVG (price), 2) FROM fake_apps;
 
     7. GROUP BY I
+        SELECT price, COUNT (*) FROM fake_apps GROUP BY price;
+
+        SELECT price, COUNT (*) FROM fake_apps WHERE downloads > 20000 GROUP BY price;
+
+        SELECT category, SUM (downloads) FROM fake_apps GROUP BY category;
 
     8. GROUP BY II
+        SELECT category, price, AVG (downloads) FROM fake_apps GROUP BY category, price;
 
     9. HAVING
+        SELECT price, ROUND (AVG (downloads) ) FROM fake_apps GROUP BY price HAVING COUNT (price) > 9;
 
     10. REVIEW

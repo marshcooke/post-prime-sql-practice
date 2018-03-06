@@ -122,12 +122,22 @@ iii. AGGREGATE FUNCTIONS
         SELECT COUNT (*) FROM fake_apps WHERE price = 0 ;
         
     3. SUM
+        SELECT SUM (downloads) FROM fake_apps;
 
     4. MAX/MIN
+        SELECT MIN (downloads) FROM fake_apps;
+
+        SELECT MAX (price) FROM fake_apps;
 
     5. AVERAGE
+        SELECT AVG (downloads) FROM fake_apps;
+
+        SELECT AVG (price) FROM fake_apps;
 
     6. ROUND
+        SELECT name, ROUND (price, 0) FROM fake_apps;
+
+        SELECT ROUND (AVG (price), 2) FROM fake_apps;
 
     7. GROUP BY I
 
